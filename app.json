@@ -1,7 +1,31 @@
 {
+  "name": "dressify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "expo": "expo",
+    "start": "expo start",
+    "build": "expo build",
+    "publish": "expo publish",
+    "eas": "eas",
+    "eas:build": "eas build",
+    "eas:update": "eas update --branch production"
+  },
+  "dependencies": {
+    "expo": "~47.0.12",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-web": "0.18.7"
+  },
+  "devDependencies": {
+    "expo-cli": "^6.0.0",
+    "eas-cli": "^3.0.0"
+  },
   "expo": {
     "name": "Dressify",
-    "slug": "dressify",
+    "slug": "dressify-jubvlldf7qtxgvjs760sa",
     "description": "Tailoring your Style, Seamlessly",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -26,20 +50,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "y"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.samiasad.dressify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "c38f4011-5aff-4c78-bff8-c021ffa1554f"
+        "projectId": "f8bbfcb2-df47-41e4-9534-8fe90d374349"
       }
     },
     "owner": "samiasad"
